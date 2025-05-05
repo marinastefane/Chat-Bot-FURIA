@@ -46,7 +46,7 @@ export default function App() {
 
     //backend
     try {
-      const response = await fetch("http://localhost:5000/responder", {
+      const response = await fetch("https://chat-bot-furia-backend.onrender.com/respostas", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage, modoZueira: modoZueira }),
