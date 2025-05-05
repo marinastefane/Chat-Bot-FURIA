@@ -37,7 +37,7 @@ const respostaFallback = () => {
 };
 
 // Rota para receber mensagens do usuário
-app.post("/responder", (req, res) => {
+app.post("/respostas", (req, res) => {
   const userMessage = req.body.message.toLowerCase();
   const modoZueira = req.body.modoZueira;
 
