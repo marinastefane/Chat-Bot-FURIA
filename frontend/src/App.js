@@ -46,11 +46,15 @@ export default function App() {
 
     //backend
     try {
-      const response = await fetch("https://chat-bot-furia-backend.onrender.com/respostas", {
+      const response = await fetch("https://chat-bot-furia-backend.onrender.com/responder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage, modoZueira: modoZueira }),
       });
+
+      if (!response.ok) {
+        throw new Error("Erro na resposta do servidor");
+      }
 
       const data = await response.json();
 
