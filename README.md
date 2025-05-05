@@ -23,7 +23,7 @@ O sistema é composto por uma API backend desenvolvida com **Node.js e Express**
     - Informações sobre o ranking mundial
     - E muito mais!
 - **Modo Zueira:** Quando ativado, o bot oferece respostas descontraídas e engraçadas, com um toque de humor e irreverência.
-- **Comunicação Frontend-Backend:** A comunicação entre o frontend e o backend é feita através de requisições **POST** para a rota ` /responder`, onde o bot analisa a pergunta e responde com base em um conjunto de respostas predefinidas..
+- **Comunicação Frontend-Backend:** A comunicação entre o frontend e o backend é feita através de requisições **POST** para a rota ` /respostas`, onde o bot analisa a pergunta e responde com base em um conjunto de respostas predefinidas..
 
 
 ## Tecnologias Usadas
@@ -99,7 +99,7 @@ O frontend estará rodando em `http://localhost:3000`
 
 ## Endpoints da API
 
-### `POST /responder`
+### `POST /respostas`
 
 **Descrição:** Recebe uma mensagem do usuário e retorna uma resposta com base nas respostas predefinidas ou no modo zueira.
 
@@ -133,7 +133,7 @@ O frontend estará rodando em `http://localhost:3000`
 - **Backend**: O backend está hospedado na plataforma **Render**. O servidor é automaticamente iniciado e pode ser acessado através da URL:
 [FURIA ChatBot Backend](https://chat-bot-furia-backend.onrender.com/)
 
-- **Frontend**: O frontend do projeto é hospedado na plataforma **Vercel**. O link do frontend estará disponível assim que o deploy for concluído.
+- **Frontend**: O frontend do projeto é hospedado na plataforma **Vercel**. [FURIA ChatBot Frontend](https://chat-bot-furia-j2ztfdkwn-marinastefanes-projects.vercel.app/).
 
 ## Informações Adicionais
 - **Contato:** Para quaisquer dúvidas, me contate pelo email [marinadelfino03@gmail.com](mailto:marinadelfino03@gmail.com)
