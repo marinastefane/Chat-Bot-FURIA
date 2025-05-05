@@ -5,8 +5,18 @@ const fs = require("fs");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+const corsOptions = {
+  origin:
+    "https://chat-bot-furia-j2ztfdkwn-marinastefanes-projects.vercel.app/",
+  methods: "GET,POST",
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Servidor está funcionando!");
+});
 
 const normalize = (text) => {
   return text
