@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
   origin:
-    "https://chat-bot-furia-j2ztfdkwn-marinastefanes-projects.vercel.app/",
+    "https://chat-bot-furia-j2ztfdkwn-marinastefanes-projects.vercel.app",
   methods: "GET,POST",
 };
 
